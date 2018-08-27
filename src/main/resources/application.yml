@@ -5,7 +5,7 @@ spring:
     name: server-service
 
 eureka.instance.prefer-ip-address: true
-#2.0ĞÂÌØĞÔspring.cloud.client.ip-address
+#2.0æ–°ç‰¹æ€§spring.cloud.client.ip-address
 eureka.instance.instance-id: ${spring.application.name}:${spring.cloud.client.ip-address}:${server.port}
 eureka.client.serviceUrl.defaultZone: http://root:root@localhost:9999/eureka/
 
