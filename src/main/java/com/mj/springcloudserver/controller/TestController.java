@@ -12,9 +12,15 @@ public class TestController {
 
    @Value("${server.port}")
    String port;
+   @Value("${name}")
+   private  String name;
+   @Value("${age}")
+   private  String age;
+   @Value("${version}")
+   private  String version="开发环境";
 
    @RequestMapping("/test")
    public String test(){
-      return "server被调用了！:" +port;
+      return "server被调用了！:" +port + "你好，我是"+name+",年龄："+age+"岁。当前环境："+version;
    }
 }
