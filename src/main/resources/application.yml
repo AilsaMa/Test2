@@ -3,12 +3,16 @@ server:
 spring:
   application:
     name: server-service
+  datasource:
+    url: ${spring.datasource.url}
+    username: ${spring.datasource.username}
+    password: ${spring.datasource.password}
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+# Mybatis
+mybatis.type-aliases-package: com.mj.springcloudserver.entity
+mybatis.mapper-locations: classpath:com/mj/springcloudserver/*/mapper/*.xml
 
 
 #eureka.client. healthcheck. enabled: true                           # 开启健康检查（依赖spring-boot-starter-actuator）
-
-#
-#spring.cloud.config.name: service
-#spring.cloud.config.discovery.enabled: true
-#spring.cloud.config.discovery.service-id: config-service
-#spring.cloud.config.profile: dev
