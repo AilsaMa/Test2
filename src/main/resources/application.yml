@@ -2,7 +2,7 @@ server:
   port: 1111
 spring:
   application:
-    name: server-service
+    name: travel-service
   datasource:
     url: ${spring.datasource.url}
     username: ${spring.datasource.username}
