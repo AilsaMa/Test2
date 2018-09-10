@@ -32,11 +32,12 @@
     <property name="beginningDelimiter" value="`"/>
     <property name="endingDelimiter" value="`"/>
 
-    <plugin type="tk.mybatis.mapper.generator.MapperPlugin">
-      <property name="mappers" value="com.bbh.comm.base.mapper.BaseMapper"/>
-      <!-- caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true -->
-      <property name="caseSensitive" value="true"/>
-    </plugin>
+    <!-- 指定生成 Mapper 的继承模板 -->
+    <!--<plugin type="tk.mybatis.mapper.generator.MapperPlugin">-->
+      <!--<property name="mappers" value="com.bbh.comm.base.mapper.BaseMapper"/>-->
+      <!--&lt;!&ndash; caseSensitive默认false，当数据库表名区分大小写时，可以将该属性设置为true &ndash;&gt;-->
+      <!--<property name="caseSensitive" value="true"/>-->
+    <!--</plugin>-->
 
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
                     connectionURL="jdbc:mysql://localhost:3306/test"

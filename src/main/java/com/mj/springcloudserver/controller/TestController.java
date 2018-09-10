@@ -1,5 +1,8 @@
 package com.mj.springcloudserver.controller;
 
+import com.mj.springcloudserver.entity.AcBank;
+import com.mj.springcloudserver.service.TestService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,6 +13,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class TestController {
 
+   @Autowired
+   private TestService testService;
    @Value("${server.port}")
    String port;
    @Value("${name}")
@@ -21,6 +26,8 @@ public class TestController {
 
    @RequestMapping("/test")
    public String test(){
+      AcBank acBank = testService.getOneAcBank();
+      System.out.println(acBank.toString());
       return "server被调用了！:" +port + "你好，我是"+name+",年龄："+age+"岁。当前环境："+version;
    }
 }
