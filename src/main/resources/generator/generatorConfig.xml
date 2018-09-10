@@ -40,21 +40,21 @@
     <!--</plugin>-->
 
     <jdbcConnection driverClass="com.mysql.jdbc.Driver"
-                    connectionURL="jdbc:mysql://localhost:3306/test"
+                    connectionURL="jdbc:mysql://localhost:3306/mj"
                     userId="root"
                     password="123456">
     </jdbcConnection>
 
-    <javaModelGenerator targetPackage="com.mj.springcloudserver.entity" targetProject="E:\idea20180514\Test2\src\main\java">
+    <javaModelGenerator targetPackage="com.mj.travel.entity" targetProject="E:\idea20180514\mj-travel-service\src\main\java">
       <!-- 实体继承一个定义的父类 -->
       <!--<property name="rootClass" value="com.bbh.entity.comm.BaseEntity"/>-->
     </javaModelGenerator>
 
-    <sqlMapGenerator targetPackage="com.mj.springcloudserver.mapper"  targetProject="E:\idea20180514\Test2\src\main\java"/>
+    <sqlMapGenerator targetPackage="com.mj.travel.mapper"  targetProject="E:\idea20180514\mj-travel-service\src\main\java"/>
 
-    <javaClientGenerator targetPackage="com.mj.springcloudserver.dao" targetProject="E:\idea20180514\Test2\src\main\java" type="XMLMAPPER" />
+    <javaClientGenerator targetPackage="com.mj.travel.dao" targetProject="E:\idea20180514\mj-travel-service\src\main\java" type="XMLMAPPER" />
 
-    <table tableName="ac_bank" >
+    <table tableName="travel_train" >
       <generatedKey column="id" sqlStatement="Mysql" identity="true"/>
     </table>
   </context>

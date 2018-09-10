@@ -11,8 +11,8 @@ spring:
 
 
 # Mybatis
-mybatis.type-aliases-package: com.mj.springcloudserver.entity
-mybatis.mapper-locations: classpath:com/mj/springcloudserver/mapper/*.xml
+mybatis.type-aliases-package: com.mj.travel.entity
+mybatis.mapper-locations: classpath:com/mj/travel/mapper/*.xml
 
 
 #eureka.client. healthcheck. enabled: true                           # 开启健康检查（依赖spring-boot-starter-actuator）

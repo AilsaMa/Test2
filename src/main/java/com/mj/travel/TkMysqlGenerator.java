@@ -1,4 +1,4 @@
-package com.mj.springcloudserver;
+package com.mj.travel;
 
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by niexiaowei on 2017/9/20.
+ * Created by mj on 2018/9/10.
  */
 public class TkMysqlGenerator {
 

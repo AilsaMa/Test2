@@ -4,11 +4,11 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>com.mj</groupId>
-	<artifactId>springcloud-server</artifactId>
+	<artifactId>mj-travel-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>springcloud-server</name>
+	<name>mj-travel-service</name>
 	<description>Demo project for Spring Boot</description>
 
 	<parent>
